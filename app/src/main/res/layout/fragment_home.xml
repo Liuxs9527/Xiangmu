@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/jz"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="20dp"
+                android:background="@mipmap/btn_menu_n"
+                android:textSize="14sp" />
+
+            <com.codingending.library.FairySearchView
+                android:id="@+id/search_view"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                app:searchViewHeight="55dp"
+                app:showSearchIcon="false"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                app:showBackButton="true"
+                app:showClearButton="true"
+                app:showCancelButton="true" />
+
+            <ImageView
+                android:id="@+id/login_rebt"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="20dp"
+                android:background="@mipmap/btn_search_n"/>
+        </RelativeLayout>
+        <com.recker.flybanner.FlyBanner
+            android:id="@+id/flybanner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+        </com.recker.flybanner.FlyBanner>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="热销新品"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#e6530a"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:numColumns="3"
+                android:layout_margin="10dp"
+                ></GridView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#CCF"
+                ></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="魔力时尚"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#0a3ae6"
+                android:padding="10dp"
+                />
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                ></ListView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#CCF"
+                ></View>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="品质生活"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#e60a2b"
+                android:padding="10dp"
+                />
+            <GridView
+                android:id="@+id/gridview2"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:numColumns="2"
+                android:layout_margin="10dp"
+                ></GridView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
